@@ -31,7 +31,7 @@ RUN chown app /home/app
 USER app
 
 # Install the api program
-RUN go install github.com/RichardKnop/go-oauth2-server
+RUN go build -mod vendor github.com/RichardKnop/go-oauth2-server
 
 # User docker-entrypoint.sh script as entrypoint
 ENTRYPOINT ["./docker-entrypoint.sh"]
