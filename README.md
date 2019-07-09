@@ -6,6 +6,8 @@
 
 ## Go OAuth2 Server
 
+forked from [here](https://github.com/RichardKnop/go-oauth2-server)
+
 This service implements [OAuth 2.0 specification](https://tools.ietf.org/html/rfc6749). Excerpts from the specification are included in this README file to describe different grant types. Please read the full spec for more detailed information.
 
 [![Travis Status for RichardKnop/go-oauth2-server](https://travis-ci.org/RichardKnop/go-oauth2-server.svg?branch=master&label=linux+build)](https://travis-ci.org/RichardKnop/go-oauth2-server)

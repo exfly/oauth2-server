@@ -1,0 +1,140 @@
+# github.com/RichardKnop/go-fixtures v0.0.0-20181101035649-15577dcaa372
+github.com/RichardKnop/go-fixtures
+# github.com/RichardKnop/jsonhal v0.0.0-20181101035658-9ef775cfa6bf
+github.com/RichardKnop/jsonhal
+# github.com/RichardKnop/logging v0.0.0-20181101035820-b1d5d44c82d6
+github.com/RichardKnop/logging
+# github.com/RichardKnop/uuid v0.0.0-20160216163710-c55201b03606
+github.com/RichardKnop/uuid
+# github.com/armon/go-metrics v0.0.0-20180917152333-f0300d1749da
+github.com/armon/go-metrics
+# github.com/coreos/etcd v3.3.12+incompatible
+github.com/coreos/etcd/clientv3
+github.com/coreos/etcd/etcdserver/api/v3rpc/rpctypes
+github.com/coreos/etcd/pkg/transport
+github.com/coreos/etcd/auth/authpb
+github.com/coreos/etcd/etcdserver/etcdserverpb
+github.com/coreos/etcd/mvcc/mvccpb
+github.com/coreos/etcd/pkg/types
+github.com/coreos/etcd/pkg/tlsutil
+# github.com/davecgh/go-spew v1.1.1
+github.com/davecgh/go-spew/spew
+# github.com/gogo/protobuf v1.2.1
+github.com/gogo/protobuf/gogoproto
+github.com/gogo/protobuf/proto
+github.com/gogo/protobuf/protoc-gen-gogo/descriptor
+# github.com/golang/protobuf v1.2.0
+github.com/golang/protobuf/proto
+github.com/golang/protobuf/ptypes
+github.com/golang/protobuf/ptypes/any
+github.com/golang/protobuf/ptypes/duration
+github.com/golang/protobuf/ptypes/timestamp
+# github.com/gorilla/context v1.1.1
+github.com/gorilla/context
+# github.com/gorilla/mux v1.7.0
+github.com/gorilla/mux
+# github.com/gorilla/securecookie v1.1.1
+github.com/gorilla/securecookie
+# github.com/gorilla/sessions v1.1.3
+github.com/gorilla/sessions
+# github.com/hashicorp/consul v1.4.2
+github.com/hashicorp/consul/api
+# github.com/hashicorp/go-cleanhttp v0.5.0
+github.com/hashicorp/go-cleanhttp
+# github.com/hashicorp/go-immutable-radix v1.0.0
+github.com/hashicorp/go-immutable-radix
+# github.com/hashicorp/go-rootcerts v1.0.0
+github.com/hashicorp/go-rootcerts
+# github.com/hashicorp/golang-lru v0.5.0
+github.com/hashicorp/golang-lru/simplelru
+# github.com/hashicorp/serf v0.8.2
+github.com/hashicorp/serf/coordinate
+# github.com/jinzhu/gorm v1.9.2
+github.com/jinzhu/gorm
+# github.com/jinzhu/inflection v0.0.0-20180308033659-04140366298a
+github.com/jinzhu/inflection
+# github.com/lib/pq v1.0.0
+github.com/lib/pq
+github.com/lib/pq/oid
+# github.com/mattn/go-sqlite3 v1.10.0
+github.com/mattn/go-sqlite3
+# github.com/mitchellh/go-homedir v1.1.0
+github.com/mitchellh/go-homedir
+# github.com/mitchellh/mapstructure v1.1.2
+github.com/mitchellh/mapstructure
+# github.com/oxtoacart/bpool v0.0.0-20150712133111-4e1c5567d7c2
+github.com/oxtoacart/bpool
+# github.com/phyber/negroni-gzip v0.0.0-20180113114010-ef6356a5d029
+github.com/phyber/negroni-gzip/gzip
+# github.com/pmezard/go-difflib v1.0.0
+github.com/pmezard/go-difflib/difflib
+# github.com/stretchr/objx v0.1.1
+github.com/stretchr/objx
+# github.com/stretchr/testify v1.3.0
+github.com/stretchr/testify/mock
+github.com/stretchr/testify/assert
+github.com/stretchr/testify/suite
+github.com/stretchr/testify/require
+# github.com/unrolled/secure v1.0.0
+github.com/unrolled/secure
+# github.com/urfave/cli v0.0.0-20180106191048-75104e932ac2
+github.com/urfave/cli
+# github.com/urfave/negroni v1.0.0
+github.com/urfave/negroni
+# golang.org/x/crypto v0.0.0-20190219172222-a4c6cb3142f2
+golang.org/x/crypto/bcrypt
+golang.org/x/crypto/blowfish
+# golang.org/x/net v0.0.0-20190213061140-3a22650c66bd
+golang.org/x/net/context
+golang.org/x/net/trace
+golang.org/x/net/internal/timeseries
+golang.org/x/net/http2
+golang.org/x/net/http2/hpack
+golang.org/x/net/http/httpguts
+golang.org/x/net/idna
+# golang.org/x/sys v0.0.0-20190221075227-b4e8571b14e0
+golang.org/x/sys/unix
+# golang.org/x/text v0.3.1-0.20180807135948-17ff2d5776d2
+golang.org/x/text/secure/bidirule
+golang.org/x/text/unicode/bidi
+golang.org/x/text/unicode/norm
+golang.org/x/text/transform
+# google.golang.org/genproto v0.0.0-20190219182410-082222b4a5c5
+google.golang.org/genproto/googleapis/rpc/status
+# google.golang.org/grpc v1.18.0
+google.golang.org/grpc
+google.golang.org/grpc/codes
+google.golang.org/grpc/credentials
+google.golang.org/grpc/grpclog
+google.golang.org/grpc/health/grpc_health_v1
+google.golang.org/grpc/keepalive
+google.golang.org/grpc/metadata
+google.golang.org/grpc/status
+google.golang.org/grpc/balancer
+google.golang.org/grpc/balancer/roundrobin
+google.golang.org/grpc/connectivity
+google.golang.org/grpc/encoding
+google.golang.org/grpc/encoding/proto
+google.golang.org/grpc/internal
+google.golang.org/grpc/internal/backoff
+google.golang.org/grpc/internal/binarylog
+google.golang.org/grpc/internal/channelz
+google.golang.org/grpc/internal/envconfig
+google.golang.org/grpc/internal/grpcrand
+google.golang.org/grpc/internal/grpcsync
+google.golang.org/grpc/internal/transport
+google.golang.org/grpc/naming
+google.golang.org/grpc/peer
+google.golang.org/grpc/resolver
+google.golang.org/grpc/resolver/dns
+google.golang.org/grpc/resolver/passthrough
+google.golang.org/grpc/stats
+google.golang.org/grpc/tap
+google.golang.org/grpc/credentials/internal
+google.golang.org/grpc/balancer/base
+google.golang.org/grpc/binarylog/grpc_binarylog_v1
+google.golang.org/grpc/internal/syscall
+# gopkg.in/tylerb/graceful.v1 v1.2.15
+gopkg.in/tylerb/graceful.v1
+# gopkg.in/yaml.v2 v2.2.2
+gopkg.in/yaml.v2
