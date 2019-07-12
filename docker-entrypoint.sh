@@ -5,7 +5,7 @@ set -e
 executable="go-oauth2-server"
 cmd="$@"
 
-if [ "$1" = 'runserver' ] || [ "$1" = 'loaddata' ]; then
+if [ "$1" = 'runserver' ] || [ "$1" = 'loaddata' ] || [ "$1" = 'client' ]; then
   until $executable migrate; do
     >&2 echo "Postgres is unavailable - sleeping"
     sleep 1

@@ -95,3 +95,27 @@ func (s *Service) basicAuthClient(r *http.Request) (*models.OauthClient, error) 
 
 	return client, nil
 }
+
+func (s *Service) userinfo(w http.ResponseWriter, r *http.Request) {
+	// Get client credentials from basic auth
+	if err := r.ParseForm(); err != nil {
+		response.Error(w, err.Error(), http.StatusInternalServerError)
+		return
+	}
+
+	token := r.Form.Get("token")
+	oauthAccessToken, err := s.Authenticate(token)
+	if err != nil {
+		response.Error(w, err.Error(), http.StatusForbidden)
+	}
+	user := new(models.OauthUser)
+	notFound := s.db.
+		Where("id = LOWER(?)", oauthAccessToken.UserID.String).
+		First(user).
+		RecordNotFound()
+	if notFound {
+		response.Error(w, "user not found", http.StatusNotFound)
+		return
+	}
+	response.WriteJSON(w, models.OauthUserToUser(user), 200)
+}

@@ -54,6 +54,13 @@ func main() {
 				return cmd.RunServer(configBackend)
 			},
 		},
+		{
+			Name:  "client",
+			Usage: "management the client",
+			Action: func(c *cli.Context) error {
+				return cmd.ClientManager(configBackend)
+			},
+		},
 	}
 
 	// Run the CLI app

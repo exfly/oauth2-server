@@ -41,3 +41,6 @@ dev-up:
 
 dev-down:
 	docker-compose down --volumes
+
+dev-init:
+	docker-compose exec app client

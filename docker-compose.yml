@@ -51,7 +51,23 @@ services:
       ETCD_ENDPOINTS: "http://etcd:2379"
     command: [runserver]
 
-  app_testdata:
+  # app_testdata:
+  #   container_name: go_oauth2_server_testdata
+  #   image: go-oauth2-server:latest
+  #   build:
+  #     context: .
+  #     dockerfile: ./Dockerfile
+  #   environment:
+  #     ETCD_ENDPOINTS: "http://etcd:2379"
+  #   depends_on:
+  #     - etcd_config
+  #     - postgres
+  #   links:
+  #     - etcd
+  #     - postgres
+  #   command: ["loaddata", "oauth/fixtures/test_clients.yml"]
+
+  add_test_user_client:
     container_name: go_oauth2_server_testdata
     image: go-oauth2-server:latest
     build:
@@ -65,7 +81,7 @@ services:
     links:
       - etcd
       - postgres
-    command: ["loaddata", "oauth/fixtures/test_clients.yml"]
+    command: ["client"]
 
 volumes:
   etcd-data:

@@ -10,6 +10,9 @@ const (
 	tokensPath         = "/" + tokensResource
 	introspectResource = "introspect"
 	introspectPath     = "/" + introspectResource
+	userinfoResource   = "userinfo"
+
+	userinfoPath = "/" + userinfoResource
 )
 
 // RegisterRoutes registers route handlers for the oauth service
@@ -32,6 +35,12 @@ func (s *Service) GetRoutes() []routes.Route {
 			Method:      "POST",
 			Pattern:     introspectPath,
 			HandlerFunc: s.introspectHandler,
+		},
+		{
+			Name:        "user_info",
+			Method:      "GET",
+			Pattern:     userinfoPath,
+			HandlerFunc: s.userinfo,
 		},
 	}
 }

@@ -1,6 +1,7 @@
 package cmd
 
 import (
+	"log"
 	"net/http"
 	"time"
 
@@ -8,7 +9,7 @@ import (
 	"github.com/gorilla/mux"
 	"github.com/phyber/negroni-gzip/gzip"
 	"github.com/urfave/negroni"
-	"gopkg.in/tylerb/graceful.v1"
+	graceful "gopkg.in/tylerb/graceful.v1"
 )
 
 // RunServer runs the app
@@ -43,6 +44,7 @@ func RunServer(configBackend string) error {
 	// Set the router
 	app.UseHandler(router)
 
+	log.Println("runserver at :8080")
 	// Run the server on port 8080, gracefully stop on SIGTERM signal
 	graceful.Run(":8080", 5*time.Second, app)
 
